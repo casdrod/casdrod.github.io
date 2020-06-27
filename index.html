@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Casey Rodriguez's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="custom/custom.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+
+    <!-- NAVBAR -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Casey Rodriguez</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#about">About</a>
+          <a class="nav-item nav-link" href="#work">Work</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!-- /NAVBAR -->
+
+    <!-- HOME -->
+    <div id="home" class="jumbotron m-0 text-center">
+      <div class="jumbotron-content m-auto h-100">
+        <h1 class="display-3 welcome m-auto position-relative">Welcome!</h1>
+        <p class="lead">Let's get to know each other!</p>
+        <hr class="my-4">
+        <p style="font-size: 1.25rem;">I am a certified Front End Web Developer with an open mindset and fresh eyes!</p>
+        <div class="down-arrow">
+          <i class="fas fa-arrow-down arrow-animation" style="width: 25px; height: 25px; color:var(--primary-color);"></i>
+        </div>
+      </div>
+    </div>
+    <!-- /HOME --> 
+
+    <!-- ABOUT -->
+    <div class="about card pb-4 border-0" id="about">
+      <div class="card-body container">
+        <h1 class="display-4 card-title text-center about-title hidden">About</h1>
+        <p class="text-center about-text mb-4 hidden">Click each card for details!</p>
+        <div class="d-flex justify-content-around row row-cols-1 row-cols-lg-2">
+
+          <!-- Personal -->
+          <div class="col">
+            <a data-toggle="modal" data-target="#exampleModal">
+              <div class="card hover-card mx-md-auto shadow mb-4 rounded hidden" id="personal">
+                <div class="card-body about-card">
+                    <h2 class="text-center mb-2 about-heading">Personal</h2>
+                    <div class="text-center">
+                      <img class="rounded-circle p-3 personal-img" src="images/personal.JPG" alt="Personal Picture">
+                    </div>
+                </div>
+              </div>
+            </a>
+            <!-- Personal Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-body p-4">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="text-center mb-2 modal-heading">Personal</h3>
+                    <div class="text-center">
+                      <img class="rounded-circle p-3 img-fluid" src="images/personal.jpg" alt="Personal Picture" height=400 width=400>
+                    </div>
+                    <p class="m-0 card-text">As a wife to a wonderful man and a mother to a beautiful Pitbull Terrier, I thank God every day for the blessings he has bestowed upon me. I enjoy spending my free time with my loved ones, camping, learning a new craft or experiencing something new life has to offer!</p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Personal -->
+          <!-- Professional -->
+          <div class="col">
+            <a data-toggle="modal" data-target="#exampleModal2">
+              <div class="card hover-card mx-md-auto shadow mb-4 rounded hidden" id="pro">
+                <div class="card-body about-card">
+                    <h2 class="text-center mb-2 about-heading">Professional</h2>
+                    <div class="text-center">
+                      <img class="rounded-circle p-3 personal-img img-fluid" src="images/developer-head.png" alt="Developer Image">
+                    </div>
+                </div>
+              </div>
+            </a>
+            <!-- Professional Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-body p-4">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="text-center mb-2 modal-heading">Professional</h3>
+                    <div class="text-center">
+                      <img class="rounded-circle img-fluid" src="images/developer-head.png" alt="Developer Image" height=250 width=250>
+                    </div>
+                    <p class="my-2 card-text text-center">I have a genuine passion and excitement for Web Development!</p>
+                    <p class="my-2 card-text text-center">My long-term goal is to become a successful Full Stack Developer.</p> 
+                    <p class="my-2 card-text text-center">Skills:</p> 
+                    <div class="card skills-card p-2 border-0">
+                      <ul class="p-0 text-center">
+                        <li>HTML</li>
+                        <li>CSS/SASS</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>VSCode</li>
+                        <li>Git/Github</li>
+                        <li>jQuery</li>
+                        <li>Photoshop</li>
+                        <li>AJAX</li>
+                        <li>API</li>
+                        <li>JSON</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Professional -->
+        </div>
+      </div>
+    </div>
+    <!-- /About-->
+
+    <!-- Work-->
+    <div class="work card py-4 border-0" id="work">
+      <div class="card-body container">
+        <h1 class="display-3 card-title text-center work-title hidden">Work</h1>
+        <p class="work-text text-center mb-5 hidden">Take a look at the work I have completed!</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+          <!-- First Card -->
+          <div class="col p-0">
+            <div class="card mx-auto work-card shadow mb-5 rounded hidden" style="width: 18rem;">
+              <img src="images/thumbnails/Online-Registration-Form-Thumbnail.jpg" class="m-auto" alt="Online Registration Form Thumbnail" style="width: 280px; height: 180px;">
+              <div class="card-body text-center">
+                <h4 class="card-title">Online Registration Form</h4>
+                <p class="card-text">A responsive, mobile-first registration form using a variety of HTML form elements.</p>
+              </div>
+              <ul class="list-group list-group-flush text-center inside-card">
+                <li class="list-group-item inside-card">HTML</li>
+                <li class="list-group-item inside-card">CSS</li>
+                <li class="list-group-item inside-card">--</li>
+
+              </ul>
+              <div class="text-center p-3">
+                <a href="https://casdrod.github.io/Project-3/" target="_blank" class="card-link btn">View Site</a>
+                <a href="https://github.com/casdrod/Project-3.git" target="_blank" class="card-link btn">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of first card -->
+
+          <!-- Second Card -->
+          <div class="col p-0">
+            <div class="card mx-auto work-card shadow mb-5 rounded hidden" style="width: 18rem;">
+              <img src="images/thumbnails/Web-Style-Guide-Thumbnail.jpg" class="m-auto" alt="Web Style Guide Thumbnail" style="width: 280px; height: 180px;">
+              <div class="card-body text-center">
+                <h4 class="card-title">Web Style Guide</h4>
+                <p class="card-text">A project that uses Sass to create a custom and reusable style guide.</p>
+              </div>
+              <ul class="list-group list-group-flush text-center"> 
+                <li class="list-group-item inside-card">HTML</li>
+                <li class="list-group-item inside-card">SASS</li>
+                <li class="list-group-item inside-card">--</li>
+              </ul>
+              <div class="text-center p-3">
+                <a href="https://casdrod.github.io/Project-4/" target="_blank" class="card-link btn">Visit Site</a>
+                <a href="https://github.com/casdrod/Project-4.git" target="_blank" class="card-link btn">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of second card -->
+
+          <!-- Third Card -->
+          <div class="col p-0">
+            <div class="card mx-auto work-card shadow mb-5 rounded hidden" style="width: 18rem;">
+              <img src="images/thumbnails/Interactive-Photo-Gallery-Thumbnail.jpg" class=m-auto" alt="Interactive Photo Gallery Thumbnail" style="width: 280px; height: 180px;">
+              <div class="card-body text-center">
+                <h4 class="card-title">Interactive Photo Gallery</h4>
+                <p class="card-text">A fully responsive Interactive Photo Gallery that uses JavaScript and jQuery to search and browse photos.</p>
+              </div>
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item inside-card">HTML</li>
+                <li class="list-group-item inside-card">CSS</li>
+                <li class="list-group-item inside-card">JavaScript + jQuery</li>
+              </ul>
+              <div class="text-center p-3">
+                <a href="https://casdrod.github.io/Project-5/" target="_blank" class="card-link btn">Visit Site</a>
+                <a href="https://github.com/casdrod/Project-5.git" target="_blank" class="card-link btn">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of third card -->
+
+          <!-- Fourth Card -->
+          <div class="col p-0">
+            <div class="card mx-auto work-card shadow mb-5 rounded hidden" style="width: 18rem;">
+              <img src="images/thumbnails/Wheel-Of-Success-Thumbnail.jpg" class="m-auto" alt="Wheel Of Success Thumbnail" style="width: 280px; height: 180px;">
+              <div class="card-body text-center">
+                <h4 class="card-title">Wheel Of Success</h4>
+                <p class="card-text">A fun word guessing game with a responsive design that uses JavaScript to come up with random phrases that players will try to guess by entering different letters into the program.</p>
+              </div>
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item inside-card">HTML</li>
+                <li class="list-group-item inside-card">CSS</li>
+                <li class="list-group-item inside-card">JavaScript</li>
+              </ul>
+              <div class="text-center p-3">
+                <a href="https://casdrod.github.io/Project-6/" target="_blank" class="card-link btn">Visit Site</a>
+                <a href="https://github.com/casdrod/Project-6.git" target="_blank" class="card-link btn">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of fourth card -->
+
+          <!-- Fifth Card -->
+          <div class="col p-0">
+            <div class="card mx-auto work-card shadow mb-5 rounded hidden" style="width: 18rem;">
+              <img src="images/thumbnails/WebApp-Dashboard-Thumbnail.jpg" class="m-auto" alt="WebApp Dashboard Thumbnail" style="width: 280px; height: 180px;">
+              <div class="card-body text-center">
+                <h4 class="card-title">WebApp Dashboard</h4>
+                <p class="card-text">An interactive dashboard for a web application using advanced web techniques including SVG graphics and JavaScript. This project involves creating tables, charts, graphics and other user interface components in a manner that promotes interactivity and usability.</p>
+              </div>
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item inside-card">HTML & CSS</li>
+                <li class="list-group-item inside-car">SVG Graphics</li>
+                <li class="list-group-item inside-card">JavaScript</li>
+              </ul>
+              <div class="text-center p-3">
+                <a href="https://casdrod.github.io/Project-7/" target="_blank" class="card-link btn">Visit Site</a>
+                <a href="https://github.com/casdrod/Project-7.git" target="_blank" class="card-link btn">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of fifth card -->
+
+          <!-- Sixth Card -->
+          <div class="col p-0">
+            <div class="card mx-auto work-card shadow mb-5 rounded hidden" style="width: 18rem;">
+                <img src="images/thumbnails/Character-Directory-Thumbnail.jpg" class="m-auto" alt="Employee Directory Thumbnail" style="width: 280px; height: 180px;">
+                <div class="card-body text-center">
+                  <h4 class="card-title">Character Directory</h4>
+                  <p class="card-text">A directory of characters displayed using JavaScript to communicate with a third-party API. This project includes interactive features such as a modal and a search bar.</p>
+                </div>
+                <ul class="list-group list-group-flush text-center">
+                  <li class="list-group-item inside-card">HTML</li>
+                  <li class="list-group-item inside-card">CSS</li>
+                  <li class="list-group-item inside-card">JavaScript</li>
+                </ul>
+                <div class="text-center p-3">
+                  <a href="https://casdrod.github.io/Project-8/" target="_blank" class="card-link btn">Visit Site</a>
+                  <a href="https://github.com/casdrod/Project-8.git" target="_blank" class="card-link btn">GitHub</a>
+                </div>
+            </div>
+          </div>
+          <!-- End of fifth card -->
+
+        </div>
+      </div>
+    </div>
+    <!-- /Work -->
+
+    <!-- Contact -->
+    <div class="contact card pt-4 border-0" id="contact">
+      <div class="text-center card-body container px-0">
+        <h1 class="display-3 card-title text-center contact-title">Contact</h1>
+        <i class="fas fa-comments mb-2" style="width: 50px; height: 50px;"></i>
+        <div class="grid-container my-3">
+          <div class="general p-3">
+            <h3 class="mb-1">General Information<i class="fas fa-thumbtack ml-3" style="width: 20px; height: 20px;"></i></h3>
+            <p class="text-left">I am currently looking for remote work and would love to hear from you!</p>
+          </div>
+          <div class="contact-details p-3">
+            <h3>Details<i class="fas fa-info-circle ml-3" style="width: 20px; height: 20px;"></i></h3>
+            <div class="m-auto">
+              <p class="mb-1 phone font-weight-bold">Phone:</p>
+              <p class="phone-num text-left">(903) 736-0214</p>
+              <p class="mb-1 email font-weight-bold">Email:</p>
+              <p class="email-add text-left">casdrod@gmail.com</p>
+              <p class="mb-1 twitter font-weight-bold">Twitter:</p>
+              <p class="twitter-hand text-left">@caseyrdeveloper</p>
+            </div>
+          </div>
+          <div class="lets-connect border-top border-bottom shadow-sm p-3">
+            <h3>Let's Connect!<i class="far fa-handshake ml-3" style="width: 30px; height: 30px;"></i></h3>
+            <form class="contact-form m-auto" action="https://formspree.io/xyynpgok" method="POST" onsubmit="location.href='thanks.html';">
+              <label for="name" class="mx-2 my-auto text-left">Name:</label>
+              <input type="text" class="p-1" name="name" value="" required>
+              <label for="email" class="mx-2 my-auto text-left">Email:</label>
+              <input type="text" class="p-1" id="email" name="_replyto" value="" required>
+              <label for="message" class="mx-2 my-auto text-left">Message:</label>
+              <textarea class="p-1" id="message" name="message" value="" required></textarea>
+              <input class="btn btn-info p-2 m-0 my-2" type="submit" value="Send">
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- /Contact -->
+
+    <!-- FOOTER -->
+    <footer class="text-center mt-3">
+      <a href="https://github.com/casdrod" target="_blank">
+        <i class="fab fa-github footer-link mx-1" style="width: 30px; height: 30px;"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/casey-rodriguez-71214b194/" target="_blank">
+        <i class="fab fa-linkedin-in footer-link mx-1" style="width: 30px; height: 30px;"></i>
+      </a>
+      <a href="https://twitter.com/Casey38834273" target="_blank">
+        <i class="fab fa-twitter footer-link mx-1" style="width: 30px; height: 30px;"></i>
+      </a>
+      <p class="py-3 m-0">&copy; 2020 Casey Rodriguez</p>
+    </footer>
+    <!-- /FOOTER -->
+
+    <script src="https://kit.fontawesome.com/5fd88217dc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="custom/custom.js"></script>
+  </body>
+</html>
