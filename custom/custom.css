@@ -77,14 +77,16 @@ HOME
 /**********************************
 ABOUT
 ***********************************/
+.hidden {
+    opacity: 0;
+}
+
 /*Opacity classes for less JavaScript*/
 .no-opacity {
     opacity: 0;
 }
 
-.opacity {
-    opacity: 1;
-}
+
 
 /*Fade In animation class*/
 .fade-in {
