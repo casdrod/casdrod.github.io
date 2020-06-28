@@ -3,12 +3,12 @@ const pro = document.querySelector('#pro');
 const aboutTitle = document.querySelector('.about-title');
 let aboutText = document.querySelector('.about-text');
 const arrow = document.querySelector('.down-arrow');
-const hiddenElements = document.querySelectorAll('.hidden');
-const workCards = document.querySelectorAll('.work-card');
 const workTitle = document.querySelector('.work-title');
 const workText = document.querySelector('.work-text');
+const workCards = document.querySelectorAll('.work-card');
 
 
+/*Scroll event for about section and arrow*/
 window.addEventListener('scroll', () => {
     var scroll = window.scrollY;
     console.log(scroll);
@@ -23,17 +23,14 @@ window.addEventListener('scroll', () => {
     } if (scroll >= 450 && window.innerWidth >= 900) {
         personal.classList.add("personal-animation");
         pro.classList.add("pro-animation");
-    } if (scroll >= 600) {
-        workTitle.classList.add('fade-in');
-        workText.classList.add('fade-in');
     }
 });
 
 
-/*Observers*/
+/*Observer for work section*/
 let options = {
     root: null,
-    threshold: 0.6
+    rootMargin: "-200px 0px -200px 0px"
 };
 
 var observer = new IntersectionObserver(entries => {
@@ -44,9 +41,7 @@ var observer = new IntersectionObserver(entries => {
     });
 }, options);
 
+observer.observe(workTitle);
+observer.observe(workText);
 
 workCards.forEach(card => {observer.observe(card)});
-
-/***************************************************************************/
-/*** ADD OBSERVER FOR ABOUT SECTION, ADJUST WORK TITLE AND TEXT OBSERVER ***/
-/***************************************************************************/
