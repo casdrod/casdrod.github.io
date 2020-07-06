@@ -11,7 +11,6 @@ const workCards = document.querySelectorAll('.work-card');
 /*Scroll event for about section and arrow*/
 window.addEventListener('scroll', () => {
     var scroll = window.scrollY;
-    console.log(scroll);
     if (scroll >= 180) {
         aboutTitle.classList.add('fade-in');
     } if (scroll >= 180 && window.innerWidth <= 899) {

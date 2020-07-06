@@ -65,9 +65,9 @@ HOME
 }
 
 .welcome {
+    animation: welcome 1s ease;
     max-width: 400px;
     font-family: 'Dancing Script', cursive;
-    animation: welcome 1s ease;
 }
 
 .arrow-animation {
@@ -260,8 +260,6 @@ CONTACT/GRID
 }
 
 .contact-form input[type="submit"] {
-    /* padding: 10px; */
-    /* margin: 10px 0; */
     width: 100px;
     background-color: var(--primary-color);
     color: var(--secondary-color);

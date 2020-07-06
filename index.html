@@ -3,16 +3,16 @@
 <head>
     <title>Casey Rodriguez's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="custom/custom.css">
-</head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom/css/custom.min.css">
+  </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
 
     <!-- NAVBAR -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-      <p class="navbar-brand my-0 mr-3">Casey Rodriguez</p>
+      <a class="navbar-brand" href="index.html">Casey Rodriguez</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -279,11 +279,11 @@
         <i class="fas fa-comments mb-2" style="width: 50px; height: 50px;"></i>
         <div class="grid-container my-3">
           <div class="general p-3">
-            <h3 class="mb-1">General Information<i class="fas fa-thumbtack ml-3" style="width: 20px; height: 20px;"></i></h3>
+            <h3 class="mb-3">General Information<i class="fas fa-thumbtack ml-3" style="width: 20px; height: 20px;"></i></h3>
             <p class="text-left">I am currently looking for remote work and would love to hear from you!</p>
           </div>
           <div class="contact-details p-3">
-            <h3>Details<i class="fas fa-info-circle ml-3" style="width: 20px; height: 20px;"></i></h3>
+            <h3 class="mb-3">Details<i class="fas fa-info-circle ml-3" style="width: 20px; height: 20px;"></i></h3>
             <div class="m-auto">
               <p class="mb-1 phone font-weight-bold">Phone:</p>
               <p class="phone-num text-left">(903) 736-0214</p>
@@ -294,7 +294,7 @@
             </div>
           </div>
           <div class="lets-connect border-top border-bottom shadow-sm p-3">
-            <h3>Let's Connect!<i class="far fa-handshake ml-3" style="width: 30px; height: 30px;"></i></h3>
+            <h3 class="mb-3">Let's Connect!<i class="far fa-handshake ml-3" style="width: 30px; height: 30px;"></i></h3>
             <form class="contact-form m-auto" action="https://formspree.io/xyynpgok" method="POST" onsubmit="location.href='thanks.html';">
               <label for="name" class="mx-2 my-auto text-left">Name:</label>
               <input type="text" class="p-1" name="name" value="" required>
@@ -327,8 +327,12 @@
     <!-- /FOOTER -->
 
     <script src="https://kit.fontawesome.com/5fd88217dc.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="custom/custom.js"></script>
+    <script>
+      var personal=document.querySelector("#personal"),pro=document.querySelector("#pro"),aboutTitle=document.querySelector(".about-title"),aboutText=document.querySelector(".about-text"),arrow=document.querySelector(".down-arrow"),workTitle=document.querySelector(".work-title"),workText=document.querySelector(".work-text"),workCards=document.querySelectorAll(".work-card");
+window.addEventListener("scroll",function(){var a=window.scrollY;180<=a&&aboutTitle.classList.add("fade-in");180<=a&&899>=window.innerWidth&&(personal.classList.add("fade-in"),pro.classList.add("fade-in"));475<=a&&(arrow.classList.add("no-opacity"),aboutText.classList.add("fade-in"));450<=a&&900<=window.innerWidth&&(personal.classList.add("personal-animation"),pro.classList.add("pro-animation"))});
+var options={root:null,rootMargin:"-200px 0px -200px 0px"},observer=new IntersectionObserver(function(a){a.forEach(function(b){0<b.intersectionRatio&&b.target.classList.add("fade-in")})},options);observer.observe(workTitle);observer.observe(workText);workCards.forEach(function(a){observer.observe(a)});
+    </script>
   </body>
 </html>
