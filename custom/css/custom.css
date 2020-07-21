@@ -86,11 +86,10 @@ ABOUT
     opacity: 0;
 }
 
-
 /*Fade In animation class*/
 .fade-in {
     opacity: 1;
-    animation: fadeIn 1s ease;
+    animation: fadeIn 1.5s ease;
 }
 
 /*Personal and Professional card heading fonts*/

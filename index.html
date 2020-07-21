@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="custom/css/custom.min.css">
+    <link rel="stylesheet" href="custom/css/custom.css">
   </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
@@ -44,14 +44,14 @@
     <!-- ABOUT -->
     <div class="about card pb-4 border-0" id="about">
       <div class="card-body container">
-        <h1 class="display-4 card-title text-center about-title hidden">About</h1>
-        <p class="text-center about-text mb-4 hidden">Click each card for details!</p>
+        <h1 class="display-4 card-title text-center about-title no-opacity">About</h1>
+        <p class="text-center about-text mb-4 no-opacity">Click each card for details!</p>
         <div class="d-flex justify-content-around row row-cols-1 row-cols-lg-2">
 
           <!-- Personal -->
           <div class="col">
             <a data-toggle="modal" data-target="#exampleModal">
-              <div class="card hover-card mx-md-auto shadow mb-4 rounded hidden" id="personal">
+              <div class="card hover-card mx-md-auto shadow mb-4 rounded no-opacity" id="personal">
                 <div class="card-body about-card">
                     <h2 class="text-center mb-2 about-heading">Personal</h2>
                     <div class="text-center">
@@ -83,7 +83,7 @@
           <!-- Professional -->
           <div class="col">
             <a data-toggle="modal" data-target="#exampleModal2">
-              <div class="card hover-card mx-md-auto shadow mb-4 rounded hidden" id="pro">
+              <div class="card hover-card mx-md-auto shadow mb-4 rounded no-opacity" id="pro">
                 <div class="card-body about-card">
                     <h2 class="text-center mb-2 about-heading">Professional</h2>
                     <div class="text-center">
@@ -328,6 +328,10 @@
     <script src="https://kit.fontawesome.com/5fd88217dc.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="custom/custom.js"></script>
+    <script>
+      var arrow=document.querySelector(".down-arrow"),aboutTitle=document.querySelector(".about-title"),aboutText=document.querySelector(".about-text"),personal=document.querySelector("#personal"),pro=document.querySelector("#pro");
+window.addEventListener("scroll",function(){var a=window.scrollY;180<=a&&(aboutTitle.classList.add("fade-in"),aboutText.classList.add("fade-in"));280<=a&&899>=window.innerWidth&&(personal.classList.add("fade-in"),pro.classList.add("fade-in"));475<=a&&arrow.classList.add("no-opacity");400<=a&&900<=window.innerWidth&&(personal.classList.add("personal-animation"),pro.classList.add("pro-animation"))});
+(function(){function a(){c=document.querySelectorAll(".hidden");d=window.innerHeight}function e(){c.forEach(function(b){0>=b.getBoundingClientRect().top-d&&(b.classList.add("fade-in"),b.classList.remove("hidden"))})}var c,d;window.addEventListener("scroll",e);window.addEventListener("resize",a);a();e()})();
+    </script>
   </body>
 </html>
