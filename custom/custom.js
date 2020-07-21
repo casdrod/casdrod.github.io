@@ -33,7 +33,7 @@ var observer = new IntersectionObserver(entries => {
             entry.target.classList.add('fade-in');
         }
     });
-}, options);
+});
 
 observer.observe(workTitle);
 observer.observe(workText);

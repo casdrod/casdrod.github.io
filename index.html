@@ -328,10 +328,6 @@
     <script src="https://kit.fontawesome.com/5fd88217dc.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script>
-      var personal=document.querySelector("#personal"),pro=document.querySelector("#pro"),aboutTitle=document.querySelector(".about-title"),aboutText=document.querySelector(".about-text"),arrow=document.querySelector(".down-arrow"),workTitle=document.querySelector(".work-title"),workText=document.querySelector(".work-text"),workCards=document.querySelectorAll(".work-card");
-window.addEventListener("scroll",function(){var a=window.scrollY;180<=a&&aboutTitle.classList.add("fade-in");180<=a&&899>=window.innerWidth&&(personal.classList.add("fade-in"),pro.classList.add("fade-in"));475<=a&&(arrow.classList.add("no-opacity"),aboutText.classList.add("fade-in"));450<=a&&900<=window.innerWidth&&(personal.classList.add("personal-animation"),pro.classList.add("pro-animation"))});
-var options={root:null,rootMargin:"-200px 0px -200px 0px"},observer=new IntersectionObserver(function(a){a.forEach(function(b){0<b.intersectionRatio&&b.target.classList.add("fade-in")})},options);observer.observe(workTitle);observer.observe(workText);workCards.forEach(function(a){observer.observe(a)});
-    </script>
+    <script src="custom/custom.js"></script>
   </body>
 </html>
