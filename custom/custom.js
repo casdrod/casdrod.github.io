@@ -27,11 +27,6 @@ window.addEventListener('scroll', () => {
 
 
 /*Observer for work section*/
-let options = {
-    root: null,
-    rootMargin: "-200px 0px -200px 0px"
-};
-
 var observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
