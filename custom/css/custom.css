@@ -425,9 +425,9 @@ MEDIA QUERIES
         transition: all 0.5s;
     }
 
-    .work-card:hover {
+    /* .work-card:hover {
         transform: scale(1.1);
-    }
+    } */
 
     /**** CONTACT ****/
     .grid-container {
