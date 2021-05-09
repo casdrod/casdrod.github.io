@@ -55,7 +55,7 @@ HOME
 ***********************************/
 .jumbotron {
     background: linear-gradient(0deg, var(--secondary-color) 0%, var(--primary-color) 100%);
-    color: var(--secondary-color) !important;
+    /* color: var(--secondary-color) !important; */
     padding: 6rem 2rem;
     position: relative; 
 }
