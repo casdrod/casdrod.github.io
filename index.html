@@ -19,9 +19,9 @@
       </button>
       <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="#about">About</a>
-          <a class="nav-item nav-link" href="#work">Work</a>
+          <a class="nav-item nav-link" href="#projects">Projects</a>
           <a class="nav-item nav-link" href="#contact">Contact</a>
         </div>
       </div>
@@ -31,10 +31,10 @@
     <!-- HOME -->
     <div id="home" class="jumbotron m-0 text-center">
       <div class="jumbotron-content m-auto h-100">
-        <h1 class="display-3 welcome m-auto position-relative">Welcome!</h1>
-        <p class="lead">Let's get to know each other!</p>
+        <h1 class="display-1 welcome m-auto position-relative">Welcome!</h1>
+        <p class="lead">Let's get to know each other</p>
         <hr class="my-4">
-        <p style="font-size: 1.25rem;">I am a certified Front End Web Developer with an open mindset and fresh eyes!</p>
+        <p style="font-size: 1.25rem;" class="mw-70 m-auto">I am a certified Front End Web Developer who is continually growing and taking on challenges. Keep scrolling or use my navigation above to find out more about me!</p>
         <div class="down-arrow">
           <i class="fas fa-arrow-down arrow-animation" style="width: 25px; height: 25px; color:var(--primary-color);"></i>
         </div>
@@ -73,7 +73,7 @@
                     <div class="text-center">
                       <img class="rounded-circle p-3 img-fluid" src="images/personal2-optimized.jpg" alt="Personal Picture" height=400 width=400>
                     </div>
-                    <p class="m-0 card-text text-center">As a wife to a wonderful man and a mother to a beautiful Pitbull Terrier, I thank God every day for the blessings he has bestowed upon me. I enjoy spending my free time with my loved ones, camping, learning a new craft or experiencing something new life has to offer!</p>
+                    <p class="m-0 card-text text-center">As a wife to a wonderful man and a mother to a beautiful Pitbull Terrier, I feel truely blessed to be where I am in life. I consistantly present myself with new challanges in every aspect of my life to continue growing as a person. I enjoy spending my free time with my loved ones, doing something outside (camping is my favorite) or learning a new craft!</p>
                   </div>
                   
                 </div>
@@ -96,7 +96,7 @@
             <!-- Professional Modal -->
             <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
+                <div class="modal-content" style="overflow-y:scroll;">
                   <div class="modal-body p-4">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
@@ -112,14 +112,15 @@
                       <ul class="p-0 text-center">
                         <li>HTML5</li>
                         <li>CSS3/SASS</li>
-                        <li>JavaScript</li>
-                        <li>VSCode</li>
-                        <li>Bootstrap</li>
+                        <li>JavaScript + jQuery</li>
                         <li>WordPress</li>
-                        <li>Photoshop</li>
+                        <li>Bootstrap</li>
+                        <li>Adobe Acrobat</li>
+                        <li>Adobe XD</li>
+                        <li>PHP</li>
+                        <li>VSCode</li>
+                        <li>Adobe Photoshop</li>
                         <li>Git/Github</li>
-                        <li>RESTful API</li>
-                        <li>AJAX</li>
                       </ul>
                     </div>
                   </div>
@@ -134,13 +135,34 @@
     <!-- /About-->
 
     <!-- Work-->
-    <div class="work card py-4 border-0" id="work">
+    <div class="work card py-4 border-0" id="projects">
       <div class="card-body container">
-        <h1 class="display-3 card-title text-center work-title hidden">Work</h1>
-        <p class="work-text text-center mb-5 hidden">Take a look at the work I have completed!</p>
+        <h1 class="display-3 card-title text-center work-title hidden">Projects</h1>
+        <p class="work-text text-center mb-5 hidden">Take a look at the projects that I have built so far!</p>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 
           <!-- First Card -->
+          <div class="col p-0">
+            <div class="card mx-auto work-card shadow mb-5 rounded hidden" style="width: 18rem;">
+              <img src="images/thumbnails/green-mountain-thumbnail.jpg" class="m-auto" alt="Green Mountain Landing Page Thumbnail" style="width: 280px; height: 180px;">
+              <div class="card-body text-center">
+                <h4 class="card-title">Green Mountain Landing Page</h4>
+                <p class="card-text">A beautiful landing page that includes a reviews slider and two forms.</p>
+              </div>
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item inside-card">HTML</li>
+                <li class="list-group-item inside-card">CSS</li>
+                <li class="list-group-item inside-card">JavaScript</li>
+              </ul>
+              <div class="text-center p-3">
+                <a href="https://casdrod.github.io/Green-Mountain-Landing-Page/" target="_blank" class="card-link btn">Visit Site</a>
+                <a href="https://github.com/casdrod/Green-Mountain-Landing-Page.git" target="_blank" class="card-link btn">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of first card -->
+
+          <!-- Second Card -->
           <div class="col p-0">
             <div class="card mx-auto work-card shadow mb-5 rounded hidden" style="width: 18rem;">
               <img src="images/thumbnails/Wheel-Of-Success-Thumbnail.jpg" class="m-auto" alt="Wheel Of Success Thumbnail" style="width: 280px; height: 180px;">
@@ -159,30 +181,9 @@
               </div>
             </div>
           </div>
-          <!-- End of first card -->
+          <!-- End of Second card -->
 
           <!-- Second Card -->
-          <div class="col p-0">
-            <div class="card mx-auto work-card shadow mb-5 rounded hidden" style="width: 18rem;">
-              <img src="images/thumbnails/WebApp-Dashboard-Thumbnail.jpg" class="m-auto" alt="WebApp Dashboard Thumbnail" style="width: 280px; height: 180px;">
-              <div class="card-body text-center">
-                <h4 class="card-title">WebApp Dashboard</h4>
-                <p class="card-text">An interactive dashboard for a web application using advanced web techniques including SVG graphics and JavaScript. This project involves creating tables, charts, graphics and other user interface components in a manner that promotes interactivity and usability.</p>
-              </div>
-              <ul class="list-group list-group-flush text-center">
-                <li class="list-group-item inside-card">HTML & CSS</li>
-                <li class="list-group-item inside-car">SVG Graphics</li>
-                <li class="list-group-item inside-card">JavaScript</li>
-              </ul>
-              <div class="text-center p-3">
-                <a href="https://casdrod.github.io/Project-7/" target="_blank" class="card-link btn">Visit Site</a>
-                <a href="https://github.com/casdrod/Project-7.git" target="_blank" class="card-link btn">GitHub</a>
-              </div>
-            </div>
-          </div>
-          <!-- End of second card -->
-
-          <!-- Third Card -->
           <div class="col p-0">
             <div class="card mx-auto work-card shadow mb-5 rounded hidden" style="width: 18rem;">
                 <img src="images/thumbnails/Character-Directory-Thumbnail.jpg" class="m-auto" alt="Employee Directory Thumbnail" style="width: 280px; height: 180px;">
@@ -200,6 +201,27 @@
                   <a href="https://casdrod.github.io/Project-8/" target="_blank" class="card-link btn">Visit Site</a>
                   <a href="https://github.com/casdrod/Project-8.git" target="_blank" class="card-link btn">GitHub</a>
                 </div>
+            </div>
+          </div>
+          <!-- End of second card -->
+
+          <!-- Third Card -->
+          <div class="col p-0">
+            <div class="card mx-auto work-card shadow mb-5 rounded hidden" style="width: 18rem;">
+              <img src="images/thumbnails/WebApp-Dashboard-Thumbnail.jpg" class="m-auto" alt="WebApp Dashboard Thumbnail" style="width: 280px; height: 180px;">
+              <div class="card-body text-center">
+                <h4 class="card-title">WebApp Dashboard</h4>
+                <p class="card-text">An interactive dashboard for a web application using advanced web techniques including SVG graphics and JavaScript. This project involves creating tables, charts, graphics and other user interface components in a manner that promotes interactivity and usability.</p>
+              </div>
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item inside-card">HTML & CSS</li>
+                <li class="list-group-item inside-car">SVG Graphics</li>
+                <li class="list-group-item inside-card">JavaScript</li>
+              </ul>
+              <div class="text-center p-3">
+                <a href="https://casdrod.github.io/Project-7/" target="_blank" class="card-link btn">Visit Site</a>
+                <a href="https://github.com/casdrod/Project-7.git" target="_blank" class="card-link btn">GitHub</a>
+              </div>
             </div>
           </div>
           <!-- End of third card -->
@@ -227,7 +249,7 @@
           <!-- End of fourth card -->
 
           <!-- Fifth Card -->
-          <div class="col p-0">
+          <!-- <div class="col p-0">
             <div class="card mx-auto work-card shadow mb-5 rounded hidden" style="width: 18rem;">
               <img src="images/thumbnails/Web-Style-Guide-Thumbnail.jpg" class="m-auto" alt="Web Style Guide Thumbnail" style="width: 280px; height: 180px;">
               <div class="card-body text-center">
@@ -244,7 +266,7 @@
                 <a href="https://github.com/casdrod/Project-4.git" target="_blank" class="card-link btn">GitHub</a>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- End of fifth card -->
 
           <!-- Sixth Card -->
